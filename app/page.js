@@ -1,10 +1,14 @@
+import { Sidebar } from "../components/Sidebar";
 import { ChatDisplay } from "./ChatDisplay";
 import { Search } from "./Search";
+import { Logo } from "../components/Logo";
 
 export default function Home() {
   return (
     <>
       <div className="flex h-full gap-2.5">
+        <Sidebar />
+        <Logo />
         <div className="bg-white flex flex-col h-full px-15 py-7.5 rounded-2xl justify-end gap-2.5">
           <ChatDisplay />
           <Search />
